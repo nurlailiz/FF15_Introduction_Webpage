@@ -1,0 +1,274 @@
+body {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* start of header */
+.navcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 12px;
+  height: 40px;
+  background-color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.left_title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left_title p {
+  color: white;
+  font-size: 30px;
+  font-family: 'IM Fell English', serif;
+}
+
+.right_menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right_menu ul {
+  list-style-type: none;
+}
+
+.right_menu ul li {
+  display: inline;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  border-right: 1px solid #ddd;
+}
+
+.right_menu ul li:last-child {
+  border-right: none;
+}
+
+.right_menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.right_menu ul li a:hover {
+  color: silver;
+}
+
+.header {
+  margin: auto;
+  height: 100px;
+  margin-top: 30px;
+  width: 20%;
+  background-color: #2C3539;
+}
+
+.header h2 {
+  font-size: 40px;
+  padding: 25px;
+  color: #B6B6B4;
+  text-align: center;
+  color: #B6B6B4;
+  font-family: 'Staatliches', cursive;
+}
+/* end of header---------*/
+
+/* start of content */
+
+/* become a fan */
+.beafan {
+  position: fixed;
+  top: 800px;
+  left: 0px;
+  right: 10px;
+  height: 50px;
+  width: 300px;
+  background-color: black;
+  border: 1px dashed white;
+  border-left: none;
+  padding: 10px;
+  text-decoration: none;
+  color: orange;
+  opacity: 70%;
+}
+
+.textfan {
+  text-align: center;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
+  color: orange;
+}
+
+.textfan:hover {
+  color: silver;
+}
+/* become a fan---------*/
+
+.content {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* leftside content */
+.leftside {
+  width: 200px;
+  height: 500px;
+  flex-basis: 15%;
+  text-align: right;
+}
+
+.leftside span {
+  color: #D1D0CE;
+  font-size: 400px;
+}
+/* leftside content---------*/
+
+/* rightside content */
+.rightside {
+  width: 150px;
+  height: 500px;
+  flex-basis: 15%;
+}
+
+.socmed {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3D3C3A;
+  border: 1px solid black;
+}
+
+.socmed ul li {
+  list-style: none;
+  margin: 50px 0;
+}
+
+.icon {
+	display: block;
+	width: 5em;
+	height: 5em;
+	fill: black;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  fill: white;
+}
+/* rightside content---------*/
+
+/* middle content */
+.mid {
+  height: auto;
+  flex-basis: 60%;
+  margin : auto;
+  border: 1px solid rgba(255,255,255, 0.4);
+  background:rgba(255,255,255, 0.4);
+}
+
+.midbg {
+  margin: 20px;
+  padding: 20px;
+  height: 620px;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  margin: auto;
+}
+.text {
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.noctis {
+  width: 25%;
+  background-image: url(img/n.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.7s;
+  border: 1px dashed white;
+}
+.noctis:hover .overlay{
+  opacity: 0.9;
+}
+
+.prompto {
+  width: 25%;
+  background-image: url(img/p.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.7s;
+  border: 1px dashed white;
+}
+.prompto:hover .overlay{
+  opacity: 0.9;
+}
+
+.gladiolus {
+  width: 25%;
+  background-image: url(img/g.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.7s;
+  border: 1px dashed white;
+}
+.gladiolus:hover .overlay{
+  opacity: 0.9;
+}
+
+.ignis {
+  width: 25%;
+  background-image: url(img/i.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.7s;
+  border: 1px dashed  white;
+}
+
+.ignis:hover .overlay{
+  opacity: 0.9;
+}
+/* middle content---------*/
+
+.footer {
+  text-align: center;
+  color: white;
+}
